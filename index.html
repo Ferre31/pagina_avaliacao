@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Estabelecimento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Avaliação do Estabelecimento</h1>
+    <form id="avaliacao-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="nota">Nota:</label>
+        <div class="rating">
+            <input type="radio" id="nota-1" name="nota" value="1" required>
+            <label for="nota-1" title="Péssimo">😡</label>
+
+            <input type="radio" id="nota-2" name="nota" value="2">
+            <label for="nota-2" title="Ruim">😟</label>
+
+            <input type="radio" id="nota-3" name="nota" value="3">
+            <label for="nota-3" title="Regular">😐</label>
+
+            <input type="radio" id="nota-4" name="nota" value="4">
+            <label for="nota-4" title="Bom">😊</label>
+
+            <input type="radio" id="nota-5" name="nota" value="5">
+            <label for="nota-5" title="Excelente">😍</label>
+        </div><br><br>
+
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" name="comentario" required></textarea><br><br>
+
+        <button type="submit">Enviar Avaliação</button>
+    </form>
+    <div id="mensagem"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
